@@ -4,7 +4,6 @@ import { useNavigate } from "react-router";
 
 function AddBook() {
   const navigate = useNavigate();
-
   const [formData, setFormData] = useState({
     isbn: "",
     title: "",
@@ -21,7 +20,7 @@ function AddBook() {
   const handleFormDataChange = (
     e:
       | React.ChangeEvent<HTMLInputElement>
-      | React.ChangeEvent<HTMLTextAreaElement>
+      | React.ChangeEvent<HTMLTextAreaElement>,
   ) => {
     setFormData((prevState) => ({
       ...prevState,
